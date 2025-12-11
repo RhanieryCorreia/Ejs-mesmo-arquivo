@@ -7,19 +7,15 @@
 </head>
 <body>
      <h1> Sorteio legal</h1>
-     <input type="number" id="numerousuario" placeholder="Digite um número" name="usuario">
-    <input type="submit" placeholder="submit">
-     
+     <form action="/sorteio" method="post">
+        <button type="submit">Me sorteia Cesar</button>
+     </form>
+     <form action="/sorteiolegal" method="post">
+        <input type="number" id="numerousuario" placeholder="Digite um número" name="usuario">
+        <input type="submit" placeholder="submit"> <br>
+     </form>
+     <% if (msg) { %>
+        <%=msg%>
+    <% } %>
 </body>
-
-    <script>
-        function numeros(numerousuario){
-        const y = document.getElementById(numerousuario)
-         let  y = parseInt(numerousuario.value)
-            if( y = x ){
-                
-            }
-        }
-        
-     </script>
 </html>
